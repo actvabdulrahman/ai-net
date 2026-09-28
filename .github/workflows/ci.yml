@@ -163,7 +163,6 @@ jobs:
     # Run after the lightweight Node jobs so that at most one Rust compilation
     # is active at a time, preventing the runner (or a local dev laptop) from
     # being overwhelmed by concurrent cargo builds.
-    needs: [backend, frontend]
     runs-on: ubuntu-latest
     timeout-minutes: 25
     env:
